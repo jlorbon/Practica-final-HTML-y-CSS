@@ -1,0 +1,355 @@
+/* Definir fuentes */
+@font-face {
+    font-family: 'Karma Future';
+    src: url(fonts/Karma-Future.otf);
+}
+
+@font-face {
+    font-family: 'Karma Suture';
+    src: url(fonts/Karma-Suture.otf);
+}
+/* Fin definir fuentes */
+
+/* General */
+body {
+    font-family: 'Karma Future';
+    background: linear-gradient(to bottom right, pink, blue);
+}
+
+p {
+    font-family: 'Karma Suture';
+    text-align: left;
+}
+
+header {
+    position: sticky;
+    top: 20px;
+    bottom: 20px;
+}
+/* Fin General */
+
+/* h1 y h2 */
+h1 {
+    margin-bottom: 0px;
+    color: gold;
+    text-shadow: 10px 10px 30px red,  -10px -10px 30px red;
+}
+
+h2 {
+    margin-top: 0px;
+    color: orange;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1 img {
+    width: 40px;
+    height: 40px;
+}
+/* Fin h1 y h2 */
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 40px;
+    background-color: darkblue;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+nav a:link {
+    color: aquamarine;
+    text-decoration: none;
+    
+}
+
+nav a:visited {
+    color: palevioletred;
+}
+
+nav a:hover {
+    color: darkblue;
+    background-color: aquamarine;
+}
+/* Fin NAV */
+
+/* Enlaces */
+a:link {
+    color: aquamarine;
+    background-color: darkblue;
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: palevioletred;
+}
+
+a:hover {
+    color: darkblue;
+    background-color: aquamarine;
+}
+/* Fin Enlaces */
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    margin-top: 20px;
+    background-color: blueviolet;
+    border-top: 5px dotted black;
+}
+
+footer div {
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rrssimg {
+    width: 50px;
+    height: 50px;
+}
+/* Fin footer */
+
+/* Inicio */
+svg {
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    width: 300px;
+    height: 100px;
+    background-color: brown;
+    border: crimson;
+    border: dotted;
+    opacity: 0.5;
+}
+
+#audio {
+    width: 10px;
+    transition:left 5s ease-out 5s;
+    transform:scale(1.5,1);
+}
+
+#audio:hover {
+    position:relative;
+    left:30px;
+}
+/* Fin Inicio */
+
+/* Sistema Solar */
+.sissol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#sissolimg {
+    width: 1400px;
+    height: 700px;    
+}
+/* Fin Sistema Solar */
+
+/* Sol */
+.sol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#solimg {
+    width: 1400px;
+    height: 1400px;    
+}
+/* Fin Sol */
+
+/* Planetas */
+.planetas {
+    
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+.planeta {
+    width: 310px;
+}
+
+.planeta h4 {
+    text-align: center;
+}
+
+.planeta img {
+    width: 300px;
+    height: 300px;
+}
+/*Fin Planetas*/
+
+/* Satélites */
+#satelites {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#satelites img {
+    width: 400px;
+    height: 300px;
+}
+
+th {
+    color: blue;
+    background-color: grey;
+}
+
+.satelitesplaneta {
+    color: silver;
+    background-color: darkorchid;
+}
+
+td {
+    color: white;
+    background-color: black;
+}
+
+table, th, td {
+    border: 2px solid lightpink;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+/* Fin Satélites */
+
+/* Dónde estamos */
+#donde {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+/* Fin Dónde estamos */
+
+/* Contacto */
+form {
+    color: yellow;
+    background-color: darkcyan;
+    align-content: center;
+    font-size: 20px;
+    border: 10px dashed green;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+fieldset {
+    border-top: 5px double orange;
+    border-left: 5px double orange;
+    border-radius: 5px;
+}
+
+legend {
+    color: darkorange;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+input {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    padding: unset;
+    height: 20px;
+    width: 300px;
+}
+
+input[type=number] {
+    padding: unset;
+    height: 20px;
+    width: 150px;
+}
+
+input[type=email] {
+    padding: unset;
+    height: 20px;
+    width: 230px;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    color: black;
+    background-color: white;
+}
+
+textarea {
+    width: 450px;
+    height: 50px;
+    max-width: 500px;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 50px;
+    margin-top: 4px;
+    border-radius: 4px;
+    color: purple;
+    font-size: 16px;
+    padding-top: 13px;
+    padding-right: 3px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    margin-bottom: 16px;
+}
+
+:required {
+    border-color: greenyellow;
+    
+}
+
+:invalid {
+    border-color: darkred;
+}
+/* Fin Contacto */
